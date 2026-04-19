@@ -1,0 +1,8 @@
+.env
+*.env
+node_modules/
+build/
+dist/
+android/build/
+ios/build/
+*.log
