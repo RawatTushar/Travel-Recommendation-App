@@ -258,6 +258,7 @@ const verifyLoginOtp = async (req, res) => {
 const googleLogin = async (req, res) => {
   try {
     const { idToken } = req.body || {};
+    console.log("login id token ",idToken)
     if (!idToken || typeof idToken !== 'string') {
       return res.status(400).json({ success: false, message: 'idToken is required' });
     }
